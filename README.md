@@ -1,24 +1,30 @@
 👤 Face Recognition using Machine Learning
 
-A machine learning–based system that detects and recognizes faces from images using feature extraction and classification techniques. Trained on a Kaggle facial dataset, the model achieves high accuracy in identifying individuals.
+A machine learning–based system for detecting and recognizing faces in images. Trained on a Kaggle facial dataset, the model uses feature extraction and classification techniques to achieve high recognition accuracy.
+
+🛠 Tech Stack
+
+Language: Python
+
+Libraries: OpenCV, dlib, scikit-learn, TensorFlow/Keras (for CNN)
+
+Techniques: PCA, CNN embeddings, SVM, KNN
+
+Deployment: Local execution (can be extended to cloud/web)
 
 📁 Dataset
 
 Source: Kaggle Face Dataset
 
-Description: Labeled facial images, each representing a unique individual.
+Description: Labeled facial images, each representing a unique person.
 
-Note: Download the dataset manually from Kaggle and place it in the /dataset directory (per Kaggle’s terms of use).
+Note: Due to Kaggle’s terms, download the dataset manually and place it in the /dataset folder.
 
-🧠 Model & Techniques
+🧠 Model Overview
 
 Face Detection: OpenCV or dlib
 
-Feature Extraction:
-
-PCA (Principal Component Analysis)
-
-CNN embeddings
+Feature Extraction: PCA or CNN embeddings
 
 Classification:
 
@@ -28,14 +34,14 @@ K-Nearest Neighbors (KNN)
 
 Convolutional Neural Network (CNN)
 
-📦 Dependencies
+📦 Installation
 
-Install Python dependencies:
+Install required dependencies:
 
 pip install -r requirements.txt
 
 🚀 Quick Start
-# 1. Clone repo
+# 1. Clone repository
 git clone https://github.com/your-username/face-recognition-ml.git
 cd face-recognition-ml
 
@@ -43,21 +49,21 @@ cd face-recognition-ml
 pip install -r requirements.txt
 
 # 3. Add dataset
-# Place Kaggle dataset in /dataset folder
+# Place Kaggle dataset in /dataset
 
-# 4. Run training
+# 4. Train model
 python train.py
 
-# 5. Test model
+# 5. Run prediction
 python predict.py --image path/to/image.jpg
 
 📈 Future Enhancements
 
-Integrate deep learning–based face recognition (e.g., FaceNet)
+Use deep learning models like FaceNet for higher accuracy
 
-Add real-time recognition from webcam
+Enable real-time webcam recognition
 
-Deploy as a web application
+Deploy as a full-stack web app
 
 Author: Kusum Shaw
 License: MIT
