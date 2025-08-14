@@ -1,27 +1,63 @@
-# 👤 Face Recognition using Machine Learning
+👤 Face Recognition using Machine Learning
 
-This project implements a **face recognition system** using machine learning techniques. It is trained on a publicly available dataset from Kaggle and supports prediction and identification of faces in images. The goal is to build a robust and efficient model that can recognize faces with high accuracy.
+A machine learning–based system that detects and recognizes faces from images using feature extraction and classification techniques. Trained on a Kaggle facial dataset, the model achieves high accuracy in identifying individuals.
 
-## 📁 Dataset
+📁 Dataset
 
-- **Source:** [Kaggle Face Dataset](https://www.kaggle.com/)  
-- **Description:** The dataset contains labeled facial images used for training and testing. Each class corresponds to a unique individual.
+Source: Kaggle Face Dataset
 
-> **Note**: Due to Kaggle’s terms of use, please download the dataset manually and place it in the `/dataset` directory.
+Description: Labeled facial images, each representing a unique individual.
 
-## 🧠 Model & Techniques Used
+Note: Download the dataset manually from Kaggle and place it in the /dataset directory (per Kaggle’s terms of use).
 
-- Face detection using `OpenCV` or `dlib`
-- Feature extraction using:
-  - PCA (Principal Component Analysis) or CNN embeddings
-- Classification using:
-  - Support Vector Machines (SVM)
-  - K-Nearest Neighbors (KNN)
-  - or a CNN 
+🧠 Model & Techniques
 
-## 📦 Dependencies
+Face Detection: OpenCV or dlib
 
-Install the required Python libraries using:
+Feature Extraction:
 
-```bash
+PCA (Principal Component Analysis)
+
+CNN embeddings
+
+Classification:
+
+Support Vector Machine (SVM)
+
+K-Nearest Neighbors (KNN)
+
+Convolutional Neural Network (CNN)
+
+📦 Dependencies
+
+Install Python dependencies:
+
 pip install -r requirements.txt
+
+🚀 Quick Start
+# 1. Clone repo
+git clone https://github.com/your-username/face-recognition-ml.git
+cd face-recognition-ml
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Add dataset
+# Place Kaggle dataset in /dataset folder
+
+# 4. Run training
+python train.py
+
+# 5. Test model
+python predict.py --image path/to/image.jpg
+
+📈 Future Enhancements
+
+Integrate deep learning–based face recognition (e.g., FaceNet)
+
+Add real-time recognition from webcam
+
+Deploy as a web application
+
+Author: Kusum Shaw
+License: MIT
